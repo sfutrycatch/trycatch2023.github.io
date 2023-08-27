@@ -38,11 +38,11 @@ img {
 }
 
 /* Link colours */
-.faq, .sfuwics a:link {
+a:link {
     color: #C0FFFF;
 }
 
-.faq, .sfuwics a:visited {
+a:visited {
     color: #EE38B2;
 }
 
@@ -72,108 +72,7 @@ img {
     }
 }
 
-/* PROFILE CSS */
-.profile__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-}
-
-.profile__name--container {
-    grid-area: name;
-}
-
-.profile__blurb--container {
-    grid-area: blurb;
-}
-
-.profile__container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "name name"
-    "img blurb";
-    gap: 0.5rem;
-}
-
-.profile__img--container {
-    grid-area: img;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.profile__img--container img {
-    width: 100%;
-}
-
-#profile__name {
-    font-weight: 550;
-}
-
-/* PROFILE MOBILE RESPONSIVE */
-@media screen and (max-width: 1050px) {
-    .profile__container {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "img name"
-        "blurb blurb";
-        gap: 1rem;
-    }
-
-    #profile__name {
-        font-size: 1.3rem;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .profile__content {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .profile__container {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "name name"
-        "img blurb";
-        gap: 0.9rem;
-    }
-}
-
-@media screen and (max-width: 440px) {
-    .profile__content {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .profile__container {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "img name"
-        "blurb blurb";
-        gap: 1rem;
-    }
-
-    #profile__name {
-        font-size: 1rem;
-    }
-}
-
-
+/* NAV BAR CSS */
 .navbar {
     background: #020326;
     height: 80px;
@@ -198,9 +97,8 @@ img {
     padding: 0 50px;
 }
 
-/*TODO: make logo vertically centered */
 .navbar__img--container {
-    text-align: center;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -246,6 +144,14 @@ img {
 .navbar__links:hover {
     color: #C0FFFF;
     transition: all 0.3s ease; 
+}
+
+.navbar__links a:link {
+    color: #fff;
+}
+
+.navbar__links a:visited {
+    color: #fff;
 }
 
 @media screen and (max-width: 960px) {
@@ -408,6 +314,107 @@ img {
     #footer__img {
         text-align: center;
         width: 50%;
+    }
+}
+
+/* PROFILE CSS */
+.profile__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.profile__name--container {
+    grid-area: name;
+}
+
+.profile__blurb--container {
+    grid-area: blurb;
+}
+
+.profile__container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "name name"
+    "img blurb";
+    gap: 0.5rem;
+}
+
+.profile__img--container {
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__img--container img {
+    width: 100%;
+}
+
+#profile__name {
+    font-weight: 550;
+}
+
+/* PROFILE MOBILE RESPONSIVE */
+@media screen and (max-width: 1050px) {
+    .profile__container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "img name"
+        "blurb blurb";
+        gap: 1rem;
+    }
+
+    #profile__name {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .profile__content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .profile__container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "name name"
+        "img blurb";
+        gap: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .profile__content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .profile__container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "img name"
+        "blurb blurb";
+        gap: 1rem;
+    }
+
+    #profile__name {
+        font-size: 1rem;
     }
 }
 
