@@ -1018,7 +1018,7 @@ a:visited {
 #faq__question {
     font-weight: bold;
     font-size: 1.3rem;
-    padding: 0.5rem 0;
+    padding-bottom: 0.5rem;
 }
 
 #faq__additional--info {
