@@ -37,10 +37,6 @@ img {
     border-radius: 15px;
 }
 
-a:is(:link, :active, :visited).active {
-    color: #EE38B2;
-}
-
 /* Link colours */
 .faq, .sfuwics a:link {
     color: #C0FFFF;
@@ -241,6 +237,10 @@ a:is(:link, :active, :visited).active {
     text-decoration: none;
     padding-left: 3rem;
     height: 100%;
+}
+
+.navbar__links[aria-current="page"] {
+    color: #EE38B2;
 }
 
 .navbar__links:hover {

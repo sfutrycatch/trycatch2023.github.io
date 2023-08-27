@@ -6,11 +6,9 @@ menu.addEventListener('click', function() {
     menuLinks.classList.toggle('active');
 });
 
-const activePage = window.location.pathname;
-const navLinks = document.querySelectorAll('.navbar__menu a').
-forEach (link => {
-    if (link.href.includes(`${activePage}`)) {
-        link.classList.add('active');
-        console.log(`${activePage}`)
+document.querySelectorAll('.navbar__links').forEach
+(link => {
+    if (link.href === window.location.href) {
+        link.setAttribute('aria-current', 'page');
     }
 })
