@@ -420,18 +420,13 @@ a:visited {
 
 /* HOME PAGE */
 /* Hero Section CSS */
-.main {
-    background-color: #020326;
-}
-
 .main__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 65vh;
-    background-color: #020326;
+    height: auto;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -576,7 +571,6 @@ a:visited {
 
 /* Info Section CSS */
 .info {
-    background-color: #020326;
     padding-top: 5rem;
     padding-bottom: 7rem;
 }
@@ -590,7 +584,6 @@ a:visited {
     justify-self: center;
     margin: 0 auto;
     height: auto;
-    background-color: #020326;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
