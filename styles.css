@@ -38,7 +38,13 @@ img {
 }
 
 /* Link colours */
+a:link {
+    color: #C0FFFF;
+}
 
+a:visited {
+    color: #EE38B2;
+}
 
 @media screen and (max-width: 480px) {
     h1 {
