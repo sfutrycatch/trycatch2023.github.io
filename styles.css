@@ -339,14 +339,15 @@ a:visited {
     grid-template-areas: 
     "name name"
     "img blurb";
-    gap: 0.5rem;
+    gap: 0.9rem;
+    height: fit-content;
 }
 
 .profile__img--container {
     grid-area: img;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .profile__img--container img {
