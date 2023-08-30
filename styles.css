@@ -318,7 +318,8 @@ a:visited {
 /* PROFILE CSS */
 .profile__content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 0.7fr));
+
     gap: 2rem;
 }
 
@@ -351,10 +352,16 @@ a:visited {
 
 .profile__img--container img {
     width: 100%;
+    max-height: 350px;
+    object-fit: cover;
 }
 
 #profile__name {
     font-weight: bold;
+}
+
+.profile__content img {
+    
 }
 
 /* PROFILE MOBILE RESPONSIVE */
@@ -362,12 +369,33 @@ a:visited {
     .profile__container {
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        grid-template-columns: 1fr 2fr;        
         grid-template-rows: auto;
         grid-template-areas: 
         "img name"
         "blurb blurb";
         gap: 1rem;
+    }
+
+    .profile__img--container {
+        grid-area: img;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .profile__name--container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .profile__img--container img {
+        width: 100%;
+        max-width: 250px;
+        max-height: 300px;
+        object-fit: cover;
     }
 
     #profile__name {
