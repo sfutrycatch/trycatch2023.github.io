@@ -572,23 +572,24 @@ a:visited {
 
 /* Info Section CSS */
 .info {
+    display: flex;
+    align-items: center;
+    justify-self: center;
     padding-top: 5rem;
     padding-bottom: 7rem;
 }
 
 .info__container {
+    max-width: 1300px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 1em;
-    grid-row-gap: 1em;
+    gap: 1em;
     align-items: center;
     justify-self: center;
     margin: 0 auto;
     height: auto;
     z-index: 1;
     width: 100%;
-    max-width: 1300px;
-    padding: 0 50px;
 }
 
 .info__txt--container {
@@ -600,7 +601,13 @@ a:visited {
 }
 
 .info__img--container {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.info img {
+    width: 100%;
 }
 
 /* Mobile Responsive */
