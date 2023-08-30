@@ -360,10 +360,6 @@ a:visited {
     font-weight: bold;
 }
 
-.profile__content img {
-    
-}
-
 /* PROFILE MOBILE RESPONSIVE */
 @media screen and (max-width: 1050px) {
     .profile__container {
@@ -981,12 +977,22 @@ a:visited {
     color: #EE38B2;
 }
 
+#company__logo {
+    border-radius: 0;
+    max-height: 150px;
+    object-fit: scale-down;
+}
+
 .company__container {
     display: flex;
     flex-direction: column;
     padding: 3rem 0;
     border-bottom: 2px solid #EE38B2;
     gap: 3rem;
+}
+
+.company__container h2 {
+    color: #fff;
 }
 
 .company__content {
