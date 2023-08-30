@@ -318,8 +318,8 @@ a:visited {
 /* PROFILE CSS */
 .profile__content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 0.7fr));
-
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(550px, 0.7fr));
     gap: 2rem;
 }
 
