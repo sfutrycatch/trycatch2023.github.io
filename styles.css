@@ -692,6 +692,12 @@ a:visited {
 }
 
 /* Mobile Responsive */
+@media screen and (max-width: 960px) {
+    .event__container {
+        width: 80%;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .schedule h1 {
         padding: 1rem 0;
@@ -703,8 +709,6 @@ a:visited {
     }
 
     .event__container {
-        width: 60%;
-        border-bottom: 2px solid #EE38B2;
         padding: 0.3rem 0;
     }
 
