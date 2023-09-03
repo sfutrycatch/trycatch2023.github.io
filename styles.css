@@ -985,7 +985,7 @@ a:visited {
 .company__container {
     display: flex;
     flex-direction: column;
-    padding: 2rem 0;
+    padding-bottom: 2rem;
     border-bottom: 2px solid #EE38B2;
     gap: 1rem;
 }
@@ -1017,7 +1017,7 @@ a:visited {
 /* bronze tier */
 .bronze__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
+    grid-template-columns: repeat(auto-fit, minmax(50px, 350px));
     gap: 2rem;
 }
 
@@ -1034,13 +1034,17 @@ a:visited {
     align-self: center;
 }
 
-.bronze__container img {
+.bronze__container #company__logo {
     width: 100%;
 }
 
-.bronze__container .company__logo {
-    max-height: 100px;
-    max-width: 250px;
+.bronze__container #company__logo {
+    /* max-height: 100px;
+    max-width: 250px; */
+}
+
+.bronze__container img {
+    width: 100%;
 }
 
 /* SPONSORS MOBILE RESPONSIVE */
