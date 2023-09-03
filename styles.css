@@ -637,8 +637,7 @@ a:visited {
     .info__container {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-self: flex-start;
+        justify-self: center;
         width: 100%;
         margin: 0 auto;
         height: auto;
@@ -651,12 +650,6 @@ a:visited {
     .info__container div:nth-child(2) { order: 1; }
     .info__container div:nth-child(3) { order: 3; }
     .info__container div:nth-child(4) { order: 4; }
-
-    #info__img {
-        height: 80%;
-        width: 90%;
-        margin: 0;
-    }
 }
 
 @media screen and (max-width: 480px) {
@@ -905,7 +898,7 @@ a:visited {
     }
 
     .speakers .profile__container {
-        padding-top: 1rem;
+        padding-top: 2rem;
     }
 }
 
