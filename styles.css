@@ -285,34 +285,30 @@ a:visited {
 .footer {
     margin-top: auto;
     background-color: #060419;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 .footer__container {
-    padding: 3rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 3rem;
+    gap: 2rem;
+}
+
+.footer__logo a{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.footer__logo {
-    display: flex;
-    justify-content: center;
-    width: fit-content;
-}
-
 #footer__img {
-    text-align: center;
-    width: 70%;
-}
-
-@media screen and (max-width: 480px) {
-    .footer__container {
-        padding: 0.5rem 0;
-    }
-
-    #footer__img {
-        text-align: center;
-        width: 50%;
-    }
+    width: 90%;
+    height: 80%;
 }
 
 /* PROFILE CSS */
@@ -1039,8 +1035,8 @@ a:visited {
 }
 
 .bronze__container #company__logo {
-    /* max-height: 100px;
-    max-width: 250px; */
+    max-height: 100px;
+    max-width: 250px;
 }
 
 .bronze__container img {
