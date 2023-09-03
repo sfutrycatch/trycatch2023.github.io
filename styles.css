@@ -318,7 +318,6 @@ a:visited {
 /* PROFILE CSS */
 .profile__content {
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
     grid-template-columns: repeat(auto-fit, minmax(550px, 0.7fr));
     gap: 2rem;
 }
@@ -986,9 +985,13 @@ a:visited {
 .company__container {
     display: flex;
     flex-direction: column;
-    padding: 3rem 0;
+    padding: 2rem 0;
     border-bottom: 2px solid #EE38B2;
-    gap: 3rem;
+    gap: 1rem;
+}
+
+.company__blurb {
+    max-width: 600px;
 }
 
 .company__container h2 {
@@ -1009,6 +1012,35 @@ a:visited {
 
 .company__logo img {
     width: 100%;
+}
+
+/* bronze tier */
+.bronze__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 0.7fr));
+    gap: 2rem;
+}
+
+.bronze__container .company__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.bronze__container .company__content {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.bronze__container img {
+    width: 100%;
+}
+
+.bronze__container .company__logo {
+    max-height: 100px;
+    max-width: 250px;
 }
 
 /* SPONSORS MOBILE RESPONSIVE */
