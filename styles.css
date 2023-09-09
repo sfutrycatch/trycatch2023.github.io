@@ -1007,6 +1007,7 @@ a:visited {
 .bronze__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50px, 350px));
+    justify-content: center;
     gap: 2rem;
 }
 
