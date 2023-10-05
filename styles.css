@@ -8,10 +8,12 @@
 html, body {
     background-color: #020326;
     overflow-x: hidden;
+    overflow-y: auto;
+    /* overflow-y: hidden; */
 }
 
 body {
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
@@ -44,6 +46,10 @@ a:link {
 
 a:visited {
     color: #EE38B2;
+}
+
+video {
+    width: 100%;
 }
 
 @media screen and (max-width: 480px) {
@@ -993,7 +999,7 @@ a:visited {
 
 .company__content {
     display: grid;
-    grid-template-columns: 3fr 4fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 2rem;
 }
 
@@ -1001,6 +1007,11 @@ a:visited {
     display: flex;
     justify-content: center;
     align-self: center;
+}
+
+.company__logo a{
+    width: fit-content;
+    text-align: center;
 }
 
 .company__logo img {
